@@ -10,6 +10,11 @@ app.config['SQALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
+if os.environ.get('ENV') == 'production':
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+else:
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://localhost/freedomsongs-db'
+
 modus = Modus(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
