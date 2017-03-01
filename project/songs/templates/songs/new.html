@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  <div class="col-sm-4 col-sm-offset-4">
+    <h2 class="join-message">Submit a Freedom Song</h2>
+    <form action="{{ url_for('songs.index', id=current_user.id) }}" method="POST">
+      {{ form.csrf_token }}
+      {{ form.title(placeholder="Song Title", class="form-control") }}
+      {{ form.artist(placeholder="Artist", class="form-control") }}
+      {{ form.song_link(placeholder="YouTube Embed Link", class="form-control") }}
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

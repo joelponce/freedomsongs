@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="col-md-10">
+    <h3>FAQ</h3>
+    <hr>
+    <ol>
+      <li>What is this project about?</li>
+      <br>
+        <p>Check out the <a href="{{url_for('users.about')}}">About</a> page to learn more!</p>
+      <br>
+      <li>Who can contribute to the project?</li>
+      <br>
+        <p>Currently, anyone can make an account and contribute to the project! Future updates will offer different kinds of user accounts with different permissions.</p>
+      <br>
+      <li>What are the plans for the future of the project?</li>
+      <br>
+        <p>The goal is to make Freedom Songs an open-source project. I imagine having user profiles, a tag system, blog features for music articles, playlist submissions, and artist feature pages. The project will rely on the help of admins who will help filter and curate submissions to showcase on the main page of the website. I'm also looking for creative support to create original art and content.</p>
+      <br>
+      <li>I want to help! How do I get in touch?</li>
+      <br>
+        <p>Glad to hear it! Check back soon for more information.</p>
+      <br>
+    </ol>
+  </div>
+</div>
+
+{% endblock %}

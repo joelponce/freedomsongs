@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Freedom Songs Project</h1>
+      <p><i>Beyond pop privilege. Community curated database of songs of the movement by popular artists of color.</i>
+      </p>
+      <p><a class="btn btn-primary btn-lg" href="{{url_for('users.about')}}" role="button">Learn more</a></p>
+    </div>
+  </div>
+
+{% for song in songs %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <h3>{{ song.title.title() }}</h3>
+        <div class="embed-responsive embed-responsive-4by3">
+          <iframe class="embed-responsive-item" src="{{ song.song_link }}" frameborder="0"></iframe>
+        </div>
+        <div class="well well-sm">
+          <p id="tags"># tags</p>
+        </div>
+      </div>
+
+{% endfor %}
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+body {
+  background-color: #0000;
+}
+
+.navbar-default {
+  background-color: #D53939;
+  border: none;
+}
+
+.navbar-default .navbar-brand {
+  color: black;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: white;
+}
+
+#signup-btn {
+  color: black;
+}
+
+#signup-btn:hover {
+  color: white;
+}
+
+#menu {
+  color: black;
+  background-color: inherit;
+}
+
+#menu:hover {
+  color: white;
+}
+
+.jumbotron {
+  background-color: #D53939;
+  color: black;
+}
+
+.btn {
+  background-color: #FFB563;
+  border: none;
+  color: black;
+  outline: 0;
+}
+
+.btn-default:hover {
+  background-color: #286090;
+  color: white;
+}
+
+.well {
+  background-color: #D53939;
+}
+
+p#tags {
+  font-size: 90%;
+  color: black;
+}
+
+.join-message {
+  color: black;
+}
