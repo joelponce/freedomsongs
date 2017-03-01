@@ -8,5 +8,4 @@ manager = Manager(app)
 manager.add_command('db', MigrateCommand)
 
 if __name__ == '__main__':
-    from IPython import embed; embed()
     manager.run()
