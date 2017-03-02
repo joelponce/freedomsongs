@@ -20,6 +20,8 @@ Community curated database of songs of the movement by popular artists of color.
 
 
 ### Future Functionality
+|Verb |Path   |Return   |Use   |Auth |
+|---|---|---|---|:---:|
 |GET|/users/\<user_id>/account|render:`account.html`|Display account preferences|Y|
 |PATCH|/users/\<user_id>|redirect:`account.html`|Updates user information|Y|
 |GET|/users/\<admin>|render:`admin.html`|Special route for me!|Y+|
